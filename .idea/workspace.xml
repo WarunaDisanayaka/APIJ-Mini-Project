@@ -5,87 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69e3925a-56fe-41a6-b41e-0da7eb134618" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ChatApp/src/Testing/client/ChatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatApp/src/Testing/client/ChatClientDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatApp/src/Testing/client/ChatClientIF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatApp/src/Testing/server/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatApp/src/Testing/server/ChatServerDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatApp/src/Testing/server/ChatServerIF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/src/chatapp/ChatApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/src/chatapp/ChatApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources/6ba63433-b26f-45ad-a1ed-0d91272c132b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources/6ba63433-b26f-45ad-a1ed-0d91272c132b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources/6ba63433-b26f-45ad-a1ed-0d91272c132b/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources/6ba63433-b26f-45ad-a1ed-0d91272c132b/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources/6ba63433-b26f-45ad-a1ed-0d91272c132b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dataSources/6ba63433-b26f-45ad-a1ed-0d91272c132b/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/libraries/TECH_MIS_mini_project_Group_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/TECH-MIS_mini_project_Group-16.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/TECH-MIS_mini_project_Group-16.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/Techmis Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/Techmis Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/Database/dbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/Database/dbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminCourses.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminCourses.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminCourses.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminCourses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminNoticePanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminNoticePanel.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminNoticePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminNoticePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminPanel.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminTimeTable.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminTimeTable.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminTimeTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/AdminTimeTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/UserProfiles.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/UserProfiles.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/UserProfiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Admin/UserProfiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/CaMarks.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/CaMarks.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/CaMarks.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/CaMarks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/Gpa.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/Gpa.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/Gpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/Gpa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecMaterial.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecMaterial.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecMaterial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecPortal.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecPortal.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecPortal.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/LecPortal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/MedicAttend.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/MedicAttend.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/MedicAttend.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/MedicAttend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StMarks.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StMarks.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StMarks.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StMarks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StudentDetails.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StudentDetails.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StudentDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Lecturer/StudentDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Login/Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Login/Login.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/Login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Attendance.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Attendance.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Attendance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Medicals.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Medicals.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Medicals.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Medicals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Notices.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Notices.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Notices.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Notices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/TechnicalOfficerMain.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/TechnicalOfficerMain.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/TechnicalOfficerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/TechnicalOfficerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Timetable.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Timetable.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/Timetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewAttendance.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewAttendance.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewAttendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewAttendance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewMedical.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewMedical.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/TechnicalOfficer/ViewMedical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Attendace.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Attendace.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Attendace.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Attendace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Marks.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Marks.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Marks.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Marks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Medical_records.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Medical_records.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Medical_records.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Medical_records.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Update_Profile.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Update_Profile.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Update_Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/Update_Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/course_Details.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/course_Details.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/course_Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/course_Details.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/s_dashboard.form" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/s_dashboard.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/s_dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/GUI/student/s_dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/java project/TECH-MIS_mini_project_Group-16/src/com/techmis/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/src/Testing/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/src/Testing/server/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +15,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -129,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677863059475</updated>
       <workItem from="1677863060710" duration="29000" />
-      <workItem from="1679253548665" duration="1373000" />
+      <workItem from="1679253548665" duration="1786000" />
     </task>
     <servers />
   </component>
