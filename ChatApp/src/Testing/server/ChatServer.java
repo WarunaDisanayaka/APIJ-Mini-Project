@@ -10,6 +10,7 @@ import j
  * @author warunapradeep
  */
 public class ChatServer extends UnicastRemoteObject implements ChatServerIF {
-
+    private static final long serialVersionUID = 1L;
+    
 
 }
