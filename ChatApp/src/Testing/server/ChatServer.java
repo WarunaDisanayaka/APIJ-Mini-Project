@@ -14,10 +14,11 @@ public class ChatServer extends UnicastRemoteObject implements ChatServerIF {
     private  ArrayList<ChatClientIF>chatClients;
     protected ChatServer()throws RemoteException{
         chatClients =new
+
     }
 
     public void registerChatClient(ChatClientIF chatClient)throws RemoteException{
-
+        System.out.println();
     }
 
     void broadcastMessage(String message)throws RemoteException{

@@ -9,5 +9,9 @@ package Testing.server;
  * @author warunapradeep
  */
 public class ChatServerDriver {
+
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
     
 }
