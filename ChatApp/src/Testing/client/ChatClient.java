@@ -10,5 +10,5 @@ package Testing.client;
  */
 public class ChatClient {
     
-    p
+
 
