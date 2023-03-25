@@ -82,7 +82,7 @@ public class main extends javax.swing.JFrame {
         password = new javax.swing.JPasswordField();
         eyeOpenIcon = new javax.swing.JLabel();
         eyeCloseIcon = new javax.swing.JLabel();
-        signin_btn = new javax.swing.JLabel();
+        signin = new javax.swing.JLabel();
         signin_error = new javax.swing.JLabel();
         forgotPassword = new javax.swing.JTextField();
         forgotPasswordHover = new javax.swing.JTextField();
@@ -278,13 +278,13 @@ public class main extends javax.swing.JFrame {
         });
         signin_panel.add(eyeCloseIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 20, 20));
 
-        signin_btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        signin_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+        signin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        signin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                signin_btnMouseClicked(evt);
+                signinMouseClicked(evt);
             }
         });
-        signin_panel.add(signin_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 430, 130, 30));
+        signin_panel.add(signin, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 430, 130, 30));
 
         signin_error.setFont(new java.awt.Font("0KDBOLIDDA", 1, 14)); // NOI18N
         signin_error.setForeground(new java.awt.Color(255, 0, 0));
@@ -1318,11 +1318,50 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_signin_link_hover1MouseExited
 
     
-    private void signin_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin_btnMouseClicked
+    private void signinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signinMouseClicked
+            
+      String user_name = username.getText();
+        String user_pwd = password.getText();
 
-      
+        ArrayList<String> error = validatelogin(user_name, user_pwd);
 
-    }//GEN-LAST:event_signin_btnMouseClicked
+        if (error.isEmpty() == false) {
+            signin_error.setText(error.get(0));
+        } else {
+
+            List data = DBManager.getDBM().login(user_name, user_pwd);
+            Iterator i = data.iterator();
+            if (i.hasNext()) {
+                User user = (User) i.next();
+                if (user.getRoleId() == 1) {
+                  
+                    System.out.println(user.getUsername());
+
+                    loadGroup(true);
+                    adminDefault();
+
+                } else {
+          
+                    chatListDefault();
+
+                    u = new chatUser(user.getId(), user.getUsername(), user.getNickname(), user.getEmail());
+
+                    loadClientGroups();
+                    this.start_client();
+                }
+
+                this.id = user.getId();
+                update_nickname.setText(user.getNickname());
+                update_email.setText(user.getEmail());
+
+            } else {
+                System.out.println("Username or Password Incorrect");
+                signin_error.setText("Username or Password Incorrect");
+            }
+
+        }
+
+    }//GEN-LAST:event_signinMouseClicked
 
 
     private void signup_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signup_btnMouseClicked
@@ -1565,9 +1604,9 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JTextField signUpLink;
     private javax.swing.JTextField signUpLinkHover;
     private javax.swing.JPasswordField signUpPassword;
+    private javax.swing.JLabel signin;
     private javax.swing.JTextField signinLink;
     private javax.swing.JTextField signinLinkHover;
-    private javax.swing.JLabel signin_btn;
     private javax.swing.JLabel signin_error;
     private javax.swing.JTextField signin_link_hover1;
     private javax.swing.JPanel signin_panel;
