@@ -66,6 +66,58 @@ public class main extends javax.swing.JFrame {
 
        
     }
+    
+    int y = 13;
+//    Chat group loading 
+    public void loadGroup(boolean isSignin) {
+        y = 13;
+        List groups = DBManager.getDBM().getChats();
+
+        groupPanel.removeAll();
+
+        for (Iterator iterator = groups.iterator(); iterator.hasNext();) {
+            Groups next = (Groups) iterator.next();
+
+            if (isSignin) {
+                DBManager.getDBM().putOffline(next.getId());
+            }
+
+            JPanel group = new javax.swing.JPanel();
+            group.setBackground(new java.awt.Color(44, 47, 62));
+            group.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+            JLabel groupAction = new javax.swing.JLabel();
+
+            if (DBManager.getDBM().isOnline(next.getId())) {
+                groupAction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/end.png")));
+            } else {
+                groupAction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/start.png")));
+            }
+
+            groupAction.addMouseListener(new MouseAdapter() {
+                public void mouseClicked(MouseEvent e) {
+                    groupAction(next.getId(), groupAction);
+
+                }
+            });
+
+            JLabel groupDesc = new javax.swing.JLabel();
+            groupDesc.setForeground(new java.awt.Color(255, 255, 255));
+            groupDesc.setText("<html>" + next.getDescription() + "</html>");
+
+            JLabel groupName = new javax.swing.JLabel();
+            groupName.setFont(new java.awt.Font("Tahoma", 1, 13));
+            groupName.setForeground(new java.awt.Color(255, 255, 255));
+            groupName.setText(next.getName());
+            group.add(groupAction, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, 29));
+            group.add(groupDesc, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 36, 163, 33));
+            group.add(groupName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 160, -1));
+            groupPanel.add(group, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, y, 325, 90));
+
+            y += 110;
+        }
+
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
