@@ -1,6 +1,7 @@
 package interfaces;
 
 import dbmanager.DBManager;
+import java.awt.Color;
 import pojos.Groups;
 import pojos.User;
 import services.Chat;
@@ -67,6 +68,43 @@ public class main extends javax.swing.JFrame {
        
     }
     
+    public void startServer(int g_id) {
+        try {
+            Chat chat = new ChatService(g_id);
+            Registry reg = LocateRegistry.createRegistry(2123);
+            reg.bind("ChatAdmin", chat);
+
+            System.out.println("Chat server is running.!");
+
+        } catch (RemoteException | AlreadyBoundException e) {
+            System.out.println("Exception ocured : " + e.getMessage());
+        }
+    }
+    
+    
+    
+    public void chataction(int chatId, JLabel gAction) {
+
+        File btnIcon = new File("");
+        String abspath = btnIcon.getAbsolutePath();
+
+        if (DBManager.getDBM().isOnline(chatId)) {
+            DBManager.getDBM().putOffline(chatId);
+            ImageIcon icon = new ImageIcon(abspath + "\\src\\app\\images\\start.png");
+            gAction.setIcon(icon);
+        } else if (DBManager.getDBM().putOnline(chatId)) {
+            ImageIcon icon = new ImageIcon(abspath + "\\src\\app\\images\\end.png");
+            gAction.setIcon(icon);
+            
+            startServer(chatId); //start chat server and nofify observers
+
+        }
+    }
+    
+    
+    
+    
+    
     int y = 13;
 //    Chat group loading 
     public void loadGroup(boolean isSignin) {
@@ -86,17 +124,18 @@ public class main extends javax.swing.JFrame {
             group.setBackground(new java.awt.Color(44, 47, 62));
             group.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-            JLabel groupAction = new javax.swing.JLabel();
+            JLabel chataction = new javax.swing.JLabel();
 
             if (DBManager.getDBM().isOnline(next.getId())) {
-                groupAction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/end.png")));
+                chataction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/end.png")));
             } else {
-                groupAction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/start.png")));
+                chataction.setIcon(new javax.swing.ImageIcon(getClass().getResource("/app/images/start.png")));
             }
 
-            groupAction.addMouseListener(new MouseAdapter() {
+            chataction.addMouseListener(new MouseAdapter() {
                 public void mouseClicked(MouseEvent e) {
-                    groupAction(next.getId(), groupAction);
+                    chataction(next.getId(), chataction);
+                 
 
                 }
             });
@@ -109,7 +148,7 @@ public class main extends javax.swing.JFrame {
             groupName.setFont(new java.awt.Font("Tahoma", 1, 13));
             groupName.setForeground(new java.awt.Color(255, 255, 255));
             groupName.setText(next.getName());
-            group.add(groupAction, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, 29));
+            group.add(chataction, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, 29));
             group.add(groupDesc, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 36, 163, 33));
             group.add(groupName, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 160, -1));
             groupPanel.add(group, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, y, 325, 90));
@@ -117,6 +156,25 @@ public class main extends javax.swing.JFrame {
             y += 110;
         }
 
+    }
+    
+    
+    
+    
+    
+    
+    public ArrayList<String> validatelogin(String username, String password) {
+        ArrayList<String> errors = new ArrayList<String>();
+
+        if ("Username".equals(username) || "".equals(username)) {
+            errors.add("Username is requird");
+        }
+
+        if ("Password".equals(password) || "".equals(password)) {
+            errors.add("Password is requird");
+        }
+
+        return errors;
     }
 
     @SuppressWarnings("unchecked")
@@ -330,6 +388,8 @@ public class main extends javax.swing.JFrame {
         });
         signin_panel.add(eyeCloseIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 20, 20));
 
+        signin.setBackground(new java.awt.Color(255, 255, 255));
+        signin.setForeground(new java.awt.Color(255, 255, 255));
         signin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         signin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1371,7 +1431,7 @@ public class main extends javax.swing.JFrame {
 
     
     private void signinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signinMouseClicked
-            
+       signin.setForeground(Color.red);
       String user_name = username.getText();
         String user_pwd = password.getText();
 
@@ -1390,16 +1450,16 @@ public class main extends javax.swing.JFrame {
                     System.out.println(user.getUsername());
 
                     loadGroup(true);
-                    adminDefault();
+//                    adminDefault();
 
                 } else {
           
-                    chatListDefault();
+//                    chatListDefault();
 
                     u = new chatUser(user.getId(), user.getUsername(), user.getNickname(), user.getEmail());
 
-                    loadClientGroups();
-                    this.start_client();
+//                    loadClientGroups();
+//                    this.start_client();
                 }
 
                 this.id = user.getId();
