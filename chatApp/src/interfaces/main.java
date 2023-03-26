@@ -174,6 +174,7 @@ public class main extends javax.swing.JFrame {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
         Log = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         Register = new javax.swing.JPanel();
         ChatArea = new javax.swing.JPanel();
         ChatList = new javax.swing.JPanel();
@@ -184,6 +185,25 @@ public class main extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(470, 640));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("USERNAME");
+
+        javax.swing.GroupLayout LogLayout = new javax.swing.GroupLayout(Log);
+        Log.setLayout(LogLayout);
+        LogLayout.setHorizontalGroup(
+            LogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LogLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jLabel1)
+                .addContainerGap(276, Short.MAX_VALUE))
+        );
+        LogLayout.setVerticalGroup(
+            LogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LogLayout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(jLabel1)
+                .addContainerGap(333, Short.MAX_VALUE))
+        );
 
         jLayeredPane1.add(Log);
         Log.setBounds(0, 0, 440, 480);
@@ -262,6 +282,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel Log;
     private javax.swing.JPanel Register;
     private javax.swing.JPanel Settings;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
 }
