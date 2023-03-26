@@ -208,11 +208,11 @@ public class main extends javax.swing.JFrame {
 
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("Don't haven't account");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
 
         jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("Sign In");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
