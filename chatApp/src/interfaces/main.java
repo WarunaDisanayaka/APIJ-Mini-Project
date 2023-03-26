@@ -187,6 +187,11 @@ public class main extends javax.swing.JFrame {
         signup_nickname_line = new javax.swing.JLabel();
         signup_btn = new javax.swing.JLabel();
         signup_nickname = new javax.swing.JTextField();
+        signup_error = new javax.swing.JLabel();
+        signin_link = new javax.swing.JTextField();
+        signin_link_hover = new javax.swing.JTextField();
+        signup_copyrights = new javax.swing.JLabel();
+        signup_footer = new javax.swing.JLabel();
         ChatArea = new javax.swing.JPanel();
         ChatList = new javax.swing.JPanel();
         Settings = new javax.swing.JPanel();
@@ -319,17 +324,19 @@ public class main extends javax.swing.JFrame {
         Register.add(signup_password_line, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, 10));
 
         signup_nickname_line.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        Register.add(signup_nickname_line, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, -1, 10));
+        Register.add(signup_nickname_line, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 0, 10));
 
         signup_btn.setBackground(new java.awt.Color(80, 181, 207));
         signup_btn.setForeground(new java.awt.Color(80, 181, 207));
+        signup_btn.setText("                 Sign Up");
+        signup_btn.setBorder(new javax.swing.border.MatteBorder(null));
         signup_btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         signup_btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 signup_btnMouseClicked(evt);
             }
         });
-        Register.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 200, 30));
+        Register.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 200, 40));
 
         signup_nickname.setBackground(new java.awt.Color(156, 172, 174));
         signup_nickname.setFont(new java.awt.Font("Bookman Old Style", 0, 11)); // NOI18N
@@ -348,6 +355,60 @@ public class main extends javax.swing.JFrame {
             }
         });
         Register.add(signup_nickname, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 240, 20));
+
+        signup_error.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
+        signup_error.setForeground(new java.awt.Color(206, 47, 131));
+        signup_error.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Register.add(signup_error, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 310, 20));
+
+        signin_link.setBackground(new java.awt.Color(28, 36, 47));
+        signin_link.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
+        signin_link.setForeground(new java.awt.Color(111, 117, 124));
+        signin_link.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        signin_link.setText("Sign In");
+        signin_link.setBorder(null);
+        signin_link.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        signin_link.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                signin_linkMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                signin_linkMouseEntered(evt);
+            }
+        });
+        signin_link.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                signin_linkActionPerformed(evt);
+            }
+        });
+        Register.add(signin_link, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 50, 20));
+
+        signin_link_hover.setEditable(false);
+        signin_link_hover.setBackground(new java.awt.Color(28, 36, 47));
+        signin_link_hover.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
+        signin_link_hover.setForeground(new java.awt.Color(206, 47, 131));
+        signin_link_hover.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        signin_link_hover.setText("Sign In");
+        signin_link_hover.setBorder(null);
+        signin_link_hover.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        signin_link_hover.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                signin_link_hoverMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                signin_link_hoverMouseExited(evt);
+            }
+        });
+        Register.add(signin_link_hover, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 50, 20));
+
+        signup_copyrights.setFont(new java.awt.Font("Bookman Old Style", 0, 10)); // NOI18N
+        signup_copyrights.setForeground(new java.awt.Color(255, 255, 255));
+        signup_copyrights.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        signup_copyrights.setText("<html><center>Copyrights &copy; 2020 Team Semicolon<br>All rights reserved</center></html>");
+        Register.add(signup_copyrights, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 360, 30));
+
+        signup_footer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/footer.gif"))); // NOI18N
+        Register.add(signup_footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 375, 130));
 
         jLayeredPane1.add(Register);
         Register.setBounds(0, 0, 440, 480);
@@ -507,6 +568,28 @@ public class main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_signup_usernameActionPerformed
 
+    private void signin_linkMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin_linkMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_signin_linkMouseClicked
+
+    private void signin_linkMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin_linkMouseEntered
+        signin_link.setVisible(false);
+        signin_link_hover.setVisible(true);
+    }//GEN-LAST:event_signin_linkMouseEntered
+
+    private void signin_linkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signin_linkActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_signin_linkActionPerformed
+
+    private void signin_link_hoverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin_link_hoverMouseClicked
+        signin_default();
+    }//GEN-LAST:event_signin_link_hoverMouseClicked
+
+    private void signin_link_hoverMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signin_link_hoverMouseExited
+        signin_link_hover.setVisible(false);
+        signin_link.setVisible(true);
+    }//GEN-LAST:event_signin_link_hoverMouseExited
+
 
     
 
@@ -567,10 +650,15 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel Settings;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JTextField signin_link;
+    private javax.swing.JTextField signin_link_hover;
     private javax.swing.JLabel signup_btn;
+    private javax.swing.JLabel signup_copyrights;
     private javax.swing.JTextField signup_email;
+    private javax.swing.JLabel signup_error;
     private javax.swing.JLabel signup_eye_close_icon;
     private javax.swing.JLabel signup_eye_open_icon;
+    private javax.swing.JLabel signup_footer;
     private javax.swing.JTextField signup_nickname;
     private javax.swing.JLabel signup_nickname_line;
     private javax.swing.JPasswordField signup_password;
