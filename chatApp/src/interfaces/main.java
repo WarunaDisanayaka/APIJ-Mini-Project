@@ -336,7 +336,7 @@ public class main extends javax.swing.JFrame {
                 signup_btnMouseClicked(evt);
             }
         });
-        Register.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 200, 40));
+        Register.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 180, 40));
 
         signup_nickname.setBackground(new java.awt.Color(156, 172, 174));
         signup_nickname.setFont(new java.awt.Font("Bookman Old Style", 0, 11)); // NOI18N
@@ -361,7 +361,7 @@ public class main extends javax.swing.JFrame {
         signup_error.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Register.add(signup_error, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 310, 20));
 
-        signin_link.setBackground(new java.awt.Color(28, 36, 47));
+        signin_link.setBackground(new java.awt.Color(80, 181, 207));
         signin_link.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
         signin_link.setForeground(new java.awt.Color(111, 117, 124));
         signin_link.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -402,13 +402,12 @@ public class main extends javax.swing.JFrame {
         Register.add(signin_link_hover, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 50, 20));
 
         signup_copyrights.setFont(new java.awt.Font("Bookman Old Style", 0, 10)); // NOI18N
-        signup_copyrights.setForeground(new java.awt.Color(255, 255, 255));
         signup_copyrights.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signup_copyrights.setText("<html><center>Copyrights &copy; 2020 Team Semicolon<br>All rights reserved</center></html>");
-        Register.add(signup_copyrights, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 360, 30));
+        signup_copyrights.setText("<html><center>Copyrights &copy; 2023<br>All rights reserved</center></html>");
+        Register.add(signup_copyrights, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 360, 30));
 
-        signup_footer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/footer.gif"))); // NOI18N
-        Register.add(signup_footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 375, 130));
+        signup_footer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/footer (1).png"))); // NOI18N
+        Register.add(signup_footer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 380, 130));
 
         jLayeredPane1.add(Register);
         Register.setBounds(0, 0, 440, 480);
