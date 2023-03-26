@@ -172,55 +172,37 @@ public class main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        Log = new javax.swing.JPanel();
+        Register = new javax.swing.JPanel();
+        ChatArea = new javax.swing.JPanel();
+        ChatList = new javax.swing.JPanel();
+        Settings = new javax.swing.JPanel();
+        Admin = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(470, 640));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(500, 500));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jLabel5.setText("User Name");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+        jLayeredPane1.add(Log);
+        Log.setBounds(0, 0, 440, 480);
+        jLayeredPane1.add(Register);
+        Register.setBounds(0, 0, 440, 480);
+        jLayeredPane1.add(ChatArea);
+        ChatArea.setBounds(0, 0, 440, 480);
+        jLayeredPane1.add(ChatList);
+        ChatList.setBounds(0, 0, 100, 100);
+        jLayeredPane1.add(Settings);
+        Settings.setBounds(0, 0, 100, 100);
+        jLayeredPane1.add(Admin);
+        Admin.setBounds(0, 0, 100, 100);
 
-        jLabel6.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jLabel6.setText("Password");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 190, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 190, -1));
-
-        jButton1.setFont(new java.awt.Font("Cambria", 0, 12)); // NOI18N
-        jButton1.setText("Login");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, -1, -1));
-
-        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel1.setText("Don't haven't account");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
-
-        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel2.setText("Sign In");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 440, 480));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     
@@ -274,12 +256,12 @@ public class main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JPanel Admin;
+    private javax.swing.JPanel ChatArea;
+    private javax.swing.JPanel ChatList;
+    private javax.swing.JPanel Log;
+    private javax.swing.JPanel Register;
+    private javax.swing.JPanel Settings;
+    private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
 }
