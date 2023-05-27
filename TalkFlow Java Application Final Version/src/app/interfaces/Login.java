@@ -1303,10 +1303,6 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
-        System.exit(0);
-    }//GEN-LAST:event_closeMouseClicked
-
     private void minimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_minimizeMouseClicked
         Chat_ball chat_ball1 = new Chat_ball(this);
         chat_ball1.setVisible(true);
@@ -2025,6 +2021,10 @@ public class Login extends javax.swing.JFrame {
     private void register_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_register_passwordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_register_passwordActionPerformed
+
+    private void closeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_closeMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_closeMouseClicked
 
     public void sender() {
         String m = typer.getText();
