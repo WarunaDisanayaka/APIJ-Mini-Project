@@ -1,6 +1,7 @@
 package com.chatapp.ui.register;
 
 import com.chatapp.database.Database;
+import entity.UserEntity;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -11,7 +12,7 @@ public class login extends JFrame {
     private JPasswordField passwordField;
     private JButton loginButton;
     private JPanel login;
-    private JTextField password;
+    private JPasswordField passwordField1;
 
     public Database db = new Database();
 
@@ -24,20 +25,22 @@ public class login extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String username = login.this.username.getText().trim();
-                String password = new String(passwordField.getPassword()).trim();
+                String password = new String(passwordField1.getPassword()).trim();
 
 
-//                // Query the database for user with the provided username and password
-//                UserEntity user = db.getUserByUsernameAndPassword(username, password);
-//
-//
-//                if (user != null) {
-//                    // User exists and login is successful
-//                    System.out.println("Login successful!");
-//                } else {
-//                    // User does not exist or invalid credentials
-//                    System.out.println("Invalid username or password!");
-//                }
+                // Query the database for user with the provided username and password
+                UserEntity user = db.getUserByUsernameAndPassword(username, password);
+
+
+                if (user != null) {
+                    // User exists and login is successful
+                    System.out.println("Login successful!");
+                    JFrame chatusers=new ChatUsers();
+                    chatusers.setVisible(true);
+                } else {
+                    // User does not exist or invalid credentials
+                    System.out.println("Invalid username or password!");
+                }
             }
         });
     }
