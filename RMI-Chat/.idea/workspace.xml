@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb254fd3-fa3d-4b13-bf3e-3bcef9b981f6" name="Changes" comment="" />
+    <list default="true" id="486247ad-c017-4a00-9f9d-1b5fbf3eb673" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2QMSXZMvGv49aaYLj4tjci5NDRg" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QMdwmh7WebHd3jO85wtSg0cE1P" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,11 +33,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eb254fd3-fa3d-4b13-bf3e-3bcef9b981f6" name="Changes" comment="" />
-      <created>1685161997885</created>
+      <changelist id="486247ad-c017-4a00-9f9d-1b5fbf3eb673" name="Changes" comment="" />
+      <created>1685167624929</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685161997885</updated>
+      <updated>1685167624929</updated>
     </task>
     <servers />
   </component>
