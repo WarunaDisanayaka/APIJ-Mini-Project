@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="486247ad-c017-4a00-9f9d-1b5fbf3eb673" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="276ee3a6-0b33-439b-b26d-d098748b225e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TalkFlow Java Application Final Version/src/app/interfaces/Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/../TalkFlow Java Application Final Version/src/app/interfaces/Login.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TalkFlow Java Application Final Version/src/app/interfaces/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TalkFlow Java Application Final Version/src/app/interfaces/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,65 +15,34 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-<<<<<<< Updated upstream
-=======
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
->>>>>>> Stashed changes
-  </component>
-  <component name="ProjectId" id="2QMdwmh7WebHd3jO85wtSg0cE1P" />
+  <component name="ProjectId" id="2QMm7E7LH78F58paOA4N3SpGSp7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< Updated upstream
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/warunapradeep/Documents/APIJ-Mini-Project/RMI-Chat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
->>>>>>> Stashed changes
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="486247ad-c017-4a00-9f9d-1b5fbf3eb673" name="Changes" comment="" />
-      <created>1685167624929</created>
+      <changelist id="276ee3a6-0b33-439b-b26d-d098748b225e" name="Changes" comment="" />
+      <created>1685171654499</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685167624929</updated>
-<<<<<<< Updated upstream
-      <workItem from="1685167625981" duration="1195000" />
-=======
-      <workItem from="1685168198828" duration="1228000" />
->>>>>>> Stashed changes
+      <updated>1685171654499</updated>
+      <workItem from="1685171655549" duration="316000" />
     </task>
     <servers />
   </component>
