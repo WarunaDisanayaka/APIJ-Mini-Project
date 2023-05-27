@@ -39,16 +39,28 @@ public class register extends JFrame {
                 user.setEmail(email);
                 user.setIsDeleted(0);
                 user.setRoleId(2);
-                File file = new File("/Users/warunapradeep/Documents/APIJ-Mini-Project/RMI-ChatApp/src/main/java/com/chatapp/image/user.png");
+                File file = new File("/Users/dhananjaya/Downloads/01.jpeg");
         byte[] imageData;
         try {
             imageData = Files.readAllBytes(file.toPath());
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
-                user.setAvatar(imageData);
-        db.insert(user);
-                System.out.println("User registered successfully!");
+
+        System.out.println("------------------"+uname+"-----------------------------");
+        if(uname.isEmpty()){
+
+        }
+        else {
+            user.setAvatar(imageData);
+            db.insert(user);
+            System.out.println("User registered successfully!");
+
+        }
+                textField1.setText("");
+                textField2.setText("");
+                textField3.setText("");
+                textField4.setText("");
 
             }
         });
