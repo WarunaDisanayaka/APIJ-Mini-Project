@@ -39,7 +39,7 @@ public class register extends JFrame {
                 user.setEmail(email);
                 user.setIsDeleted(0);
                 user.setRoleId(2);
-                File file = new File("/Users/warunapradeep/Downloads/javachatapp-main/ChatAppV2/src/main/java/com/chatapp/image/user.png");
+                File file = new File("/Users/warunapradeep/Documents/APIJ-Mini-Project/RMI-ChatApp/src/main/java/com/chatapp/image/user.png");
         byte[] imageData;
         try {
             imageData = Files.readAllBytes(file.toPath());
