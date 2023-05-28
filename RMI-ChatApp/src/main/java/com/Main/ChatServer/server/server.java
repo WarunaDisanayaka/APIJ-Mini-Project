@@ -61,7 +61,7 @@ public class server {
     public static void main(String[] args) {
         server server = new server();
         server.runServer("chat1",1);
-        server.runServer("chat2",2);
+//        server.runServer("chat2",2);
 
     }
 }
