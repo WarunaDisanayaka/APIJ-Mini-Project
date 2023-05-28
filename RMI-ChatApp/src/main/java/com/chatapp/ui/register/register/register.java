@@ -46,9 +46,21 @@ public class register extends JFrame {
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
-                user.setAvatar(imageData);
-        db.insert(user);
-                System.out.println("User registered successfully!");
+
+        System.out.println("------------------"+uname+"-----------------------------");
+        if(uname.isEmpty()){
+
+        }
+        else {
+            user.setAvatar(imageData);
+            db.insert(user);
+            System.out.println("User registered successfully!");
+
+        }
+                textField1.setText("");
+                textField2.setText("");
+                textField3.setText("");
+                textField4.setText("");
 
             }
         });
