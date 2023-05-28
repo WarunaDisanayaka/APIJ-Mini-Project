@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="276ee3a6-0b33-439b-b26d-d098748b225e" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/talkflow/client/ChatClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/talkflow/client/ChatClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/talkflow/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/talkflow/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/coding/Java Projects/APIJ-Mini-Project/RMI-Chat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685171654499</updated>
       <workItem from="1685171655549" duration="316000" />
+      <workItem from="1685185458733" duration="264000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1685172170134</created>
