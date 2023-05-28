@@ -9,7 +9,11 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.rmi.RemoteException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,10 +43,11 @@ public class ChatView extends javax.swing.JFrame implements MouseListener, KeyLi
     private JTextArea textArea1;
     private JScrollPane userListTextArea;
     private JLabel nameLabel;
+    private JTextArea textArea2;
 
 
     private void execute() {
-        textArea1.setLineWrap(true);
+        textArea2.setLineWrap(true);
         setTitle("Public Chat");
         this.nameLabel.setText(username);
         this.setVisible(true);
@@ -63,6 +68,46 @@ public class ChatView extends javax.swing.JFrame implements MouseListener, KeyLi
         t1.start();
     }
 
+    public void displayChatList() throws RemoteException {
+        textArea1.setText("");
+        msgs = chat.getAllMessages();
+        String doc = "<html><body><table>";
+        for (Message m : msgs) {
+            if (!((m.getUsername().equals(username)) && (m.getType().equals("join")))) {
+                String smileyName = m.getSmiley();
+                Date date = m.getDate();
+                DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                String a = dateFormat.format(date);
+                SimpleDateFormat parseFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                SimpleDateFormat printFormat = new SimpleDateFormat("HH:mm:ss");
+                try {
+                    Date time = parseFormat.parse(a);
+                    if (smileyName == null) {
+                        doc += "<tr><td>"
+                                + printFormat.format(time)
+                                + "</td><td><font color='rgb(55,178,204)'><b>"
+                                + m.getUsername()
+                                + "</b></font></td><td> "
+                                + m.getMsg()
+                                + "</td></tr>";
+                    } else {
+                        doc += "<tr><td>"
+                                + printFormat.format(time)
+                                + "</td><td><font color='rgb(55,178,204)'><b>"
+                                + m.getUsername()
+                                + "</b></font></td><td><img src= '"
+                                + this.getClass().getResource("/images/"+smileyName)
+                                + "' width=50 height=50 /> </td></tr>";
+                    }
+                } catch (ParseException ex) {
+                    Logger.getLogger(ChatView.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+        doc += "</table></body></html>";
+        textArea1.setText(doc);
+    }
+
 
     private void displayUserList() throws RemoteException {
         textArea1.setText("");
@@ -74,14 +119,14 @@ public class ChatView extends javax.swing.JFrame implements MouseListener, KeyLi
         }
     }
 
-//    public void refresh() {
-//        try {
-//            displayChatList();
-//            displayUserList();
-//        } catch (RemoteException ex) {
-//            Logger.getLogger(ChatView.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    public void refresh() {
+        try {
+            displayChatList();
+            displayUserList();
+        } catch (RemoteException ex) {
+            Logger.getLogger(ChatView.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     @Override
     public void keyTyped(KeyEvent e) {
