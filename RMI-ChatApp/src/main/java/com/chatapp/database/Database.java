@@ -8,6 +8,10 @@ import java.sql.Connection;
 
 public class Database {
 
+    public void logout(String username){
+
+    }
+
     public EntityManagerFactory emf;
     public EntityManager em;
     public EntityTransaction et;
