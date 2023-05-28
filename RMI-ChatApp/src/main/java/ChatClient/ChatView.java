@@ -1,13 +1,10 @@
-package com.chatapp.ui.register;
+package ChatClient;
 
-import ChatServer.ChatInterface;
-import ChatServer.Message;
+import ChatClient.chat.ChatInterface;
+import ChatServer.chat.Message;
 
 import javax.swing.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 import java.rmi.RemoteException;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -18,7 +15,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static java.time.zone.ZoneRulesProvider.refresh;
 import static jdk.javadoc.internal.tool.Main.execute;
 
 public class ChatView extends javax.swing.JFrame implements MouseListener, KeyListener {
@@ -35,6 +31,18 @@ public class ChatView extends javax.swing.JFrame implements MouseListener, KeyLi
         chat.login(username);
         execute();
     }
+
+
+    public ChatView(){
+        sendButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                    sendNewMessage();
+            }
+        });
+    }
+
+
 
 
     private JTextField textField1;
@@ -121,8 +129,24 @@ public class ChatView extends javax.swing.JFrame implements MouseListener, KeyLi
 
     public void refresh() {
         try {
-            displayChatList();
+//            displayChatList();
             displayUserList();
+        } catch (RemoteException ex) {
+            Logger.getLogger(ChatView.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+
+    private void sendNewMessage() {
+        String inputMessage = textField1.getText();
+        textField1.setText("");
+        Message message = new Message();
+        message.setUsername(username);
+        message.setMsg(inputMessage);
+        message.setType("client");
+        message.setDate(new Date());
+        try {
+            chat.sendMessage(message);
         } catch (RemoteException ex) {
             Logger.getLogger(ChatView.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -167,4 +191,7 @@ public class ChatView extends javax.swing.JFrame implements MouseListener, KeyLi
     public void mouseExited(MouseEvent e) {
 
     }
+
+
+
 }

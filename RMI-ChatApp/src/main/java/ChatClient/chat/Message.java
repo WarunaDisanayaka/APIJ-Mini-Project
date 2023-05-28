@@ -1,4 +1,4 @@
-package ChatServer;
+package ChatClient.chat;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -49,5 +49,4 @@ public class Message implements Serializable {
     public void setMsg(String msg) {
         this.msg = msg;
     }
-
 }

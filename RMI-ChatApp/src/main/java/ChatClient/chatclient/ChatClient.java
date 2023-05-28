@@ -1,9 +1,10 @@
-package ChatClient;
+package ChatClient.chatclient;
 
-import ChatServer.ChatInterface;
+import ChatClient.chat.ChatInterface;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import ChatClient.Home;
 
 public class ChatClient {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class ChatClient {
         try {
             Registry registry = LocateRegistry.getRegistry("localhost", 2099);
             ChatInterface chat = (ChatInterface)registry.lookup("chatServer");  //getting a remote reference
-//            new WelcomeView(chat);  //pass the reference as a parameter
+            new Home(chat); //pass the reference as a parameter
         } catch (Exception e) {
             e.printStackTrace();
         }

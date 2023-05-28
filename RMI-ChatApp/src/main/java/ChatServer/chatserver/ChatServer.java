@@ -1,4 +1,6 @@
-package ChatServer;
+package ChatServer.chatserver;
+
+import ChatServer.chat.ChatImpl;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
