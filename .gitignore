@@ -1,11 +1,8 @@
 /ChatApp/nbproject/private/
-<<<<<<< Updated upstream
-/chatApp/build/
-=======
 /chatApp/build/
 /chatApp/nbproject/private/
 /TalkFlow Java Application Final Version/nbproject/private/
->>>>>>> Stashed changes
 /CRUD App/nbproject/private/
 /CRUD App/build/
-RMI-ChatApp/src/main/resources/META-INF/persistence.xml
+/RMI-ChatApp/src/main/resources/META-INF/persistence.xml
+
