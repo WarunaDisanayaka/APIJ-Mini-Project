@@ -39,7 +39,7 @@ public class Login extends JFrame{
                         if (Objects.equals(role,"1")){
                                 JFrame chatGroup=new ChatGroup();
                                 chatGroup.setVisible(true);
-                                chatGroup.setSize(400,500);
+                                chatGroup.setSize(400,600);
                         }else if(Objects.equals(role,"2")){
                             JFrame userPanel=new UserPanel();
                             userPanel.setVisible(true);

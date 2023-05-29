@@ -46,10 +46,10 @@ public class UserPanel extends JFrame {
         profileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                UserPanel.super.dispose();
-//                JFrame frame6 = new UserProfile();
-//                frame6.setVisible(true);
-//                frame6.setSize(400, 500);
+                UserPanel.super.dispose();
+                JFrame frame6 = new Profile();
+                frame6.setVisible(true);
+                frame6.setSize(400, 600);
             }
         });
         subscribeButton.addActionListener(new ActionListener() {
