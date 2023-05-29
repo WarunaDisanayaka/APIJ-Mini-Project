@@ -34,7 +34,7 @@ public class UserPanel extends JFrame {
 
         List<GroupsEntity> chatrooms = db.getRooms();
 
-        defaultTableModel.setRowCount(0); // Clear existing data
+        defaultTableModel.setRowCount(0);
 
         for (GroupsEntity chatroom : chatrooms) {
             if(chatroom.getStatus()==1){
@@ -59,15 +59,13 @@ public class UserPanel extends JFrame {
                 int selectedRow = groupsTable.getSelectedRow();
 
                 if (selectedRow != -1) {
-                    // Get the data from the selected row
                     Object id = defaultTableModel.getValueAt(selectedRow, 0);
                     Object name = defaultTableModel.getValueAt(selectedRow, 1);
                     Object description = defaultTableModel.getValueAt(selectedRow, 2);
 
-                    // Assign the values to variables
                     int selectedId = Integer.parseInt(id.toString());
-                    String selectedName = name.toString(); // Assuming Name is of type String
-                    String selectedDescription = description.toString(); // Assuming Description is of type String
+                    String selectedName = name.toString();
+                    String selectedDescription = description.toString();
 
                     // Use the variables as needed
                     System.out.println("Selected ID: " + selectedId);
