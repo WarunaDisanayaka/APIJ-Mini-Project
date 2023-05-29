@@ -25,4 +25,6 @@ public class Login extends JFrame{
         int y = (int) ((dimension.getHeight() - login.getHeight()) / 2);
         login.setLocation(x, y);
     }
+
+    
 }
