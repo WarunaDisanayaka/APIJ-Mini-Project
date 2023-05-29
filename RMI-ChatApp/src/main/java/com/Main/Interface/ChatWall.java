@@ -31,6 +31,7 @@ public class ChatWall extends JFrame {
         this.setContentPane(userchatwall);
 //        this.setSize(400,600);
         this.pack();
+        setSize(450,300);
         client.runClient(User.getGroupName(), User.getGroupId());
 
 
@@ -113,6 +114,7 @@ public class ChatWall extends JFrame {
 //    }
 
     public static void main(String[] args) {
+
         SwingUtilities.invokeLater(ChatWall::new);
     }
 
