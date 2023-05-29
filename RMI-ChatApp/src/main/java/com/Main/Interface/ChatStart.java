@@ -8,11 +8,14 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
+import java.util.Objects;
 
 public class ChatStart extends JFrame {
     private JTable rooms;
     private JButton startButton;
     private JButton stopButton;
+    private JPanel chatstart;
 
     private DefaultTableModel defaultTableModel;
 
@@ -21,6 +24,31 @@ public class ChatStart extends JFrame {
 
 
 public ChatStart() {
+
+    this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    this.setContentPane(chatstart);
+    this.pack();
+
+
+    defaultTableModel=new DefaultTableModel(new Object[]{"id","Name","Description","Status"},0);
+    rooms.setModel(defaultTableModel);
+
+    List<GroupsEntity> chatrooms = database.getRooms();
+
+    defaultTableModel.setRowCount(0);
+
+    for (GroupsEntity chatroom:chatrooms){
+        String status;
+        if (chatroom.getStatus()==1){
+            status="Running";
+        }else {
+            status = "Stopped";
+        }
+        Object[] rowData={chatroom.getId(),chatroom.getName(),chatroom.getDescription(),status};
+        defaultTableModel.addRow(rowData);
+    }
+
+
     startButton.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {

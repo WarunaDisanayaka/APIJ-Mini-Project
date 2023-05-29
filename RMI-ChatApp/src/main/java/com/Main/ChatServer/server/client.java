@@ -17,7 +17,7 @@ public class client {
     public void runClient(String name, int portid){
         String chat = "";
 
-        int port = 30000+portid;
+        int port = 40000+portid;
 
         try {
 

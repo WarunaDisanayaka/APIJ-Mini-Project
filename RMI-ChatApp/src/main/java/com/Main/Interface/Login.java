@@ -37,9 +37,19 @@ public class Login extends JFrame{
                     if (Objects.equals(userEntity.getPassword(),password)){
                         User.setUser(userEntity);
                         if (Objects.equals(role,"1")){
+                                JFrame chatGroup=new ChatGroup();
+                                chatGroup.setVisible(true);
+                                chatGroup.setSize(400,500);
+                        }else if(Objects.equals(role,"2")){
+                            JFrame userPanel=new UserPanel();
+                            userPanel.setVisible(true);
+                            userPanel.setSize(400,500);
 
                         }
                     }
+                    JOptionPane.showMessageDialog(null,"Login successful!");
+                }else {
+                    JOptionPane.showMessageDialog(null,"Nor users available!");
                 }
 
             }
