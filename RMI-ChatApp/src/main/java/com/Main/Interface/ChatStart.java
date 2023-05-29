@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ChatStart {
+public class ChatStart extends JFrame {
     private JTable rooms;
     private JButton startButton;
     private JButton stopButton;

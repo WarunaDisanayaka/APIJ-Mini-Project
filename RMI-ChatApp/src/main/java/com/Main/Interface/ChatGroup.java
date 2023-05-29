@@ -68,7 +68,7 @@ public ChatGroup() {
         @Override
         public void actionPerformed(ActionEvent e) {
             ChatGroup.super.dispose();
-            JFrame frame8 = new Chatstart();
+            JFrame frame8 = new ChatStart();
             frame8.setVisible(true);
             frame8.setSize(400, 500);
         }
