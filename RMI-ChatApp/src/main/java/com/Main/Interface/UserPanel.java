@@ -25,6 +25,7 @@ public class UserPanel extends JFrame {
 
     public UserPanel(){
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        this.setSize(400, 600);
         this.setContentPane(grouppanel);
         this.pack();
 

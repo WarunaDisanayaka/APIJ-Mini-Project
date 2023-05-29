@@ -21,7 +21,7 @@ public class Login extends JFrame{
     public Login(){
         setContentPane(loginPanel);
         setTitle("Login");
-        setSize(450,300);
+        setSize(400,600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
         loginButton.addActionListener(new ActionListener() {
@@ -43,7 +43,11 @@ public class Login extends JFrame{
                         }else if(Objects.equals(role,"2")){
                             JFrame userPanel=new UserPanel();
                             userPanel.setVisible(true);
-                            userPanel.setSize(400,500);
+                            userPanel.setSize(400,600);
+
+                            JButton button = (JButton) e.getSource();
+                            JFrame welcome = (JFrame) SwingUtilities.getWindowAncestor(button);
+                            welcome.dispose();
 
                         }
                     }

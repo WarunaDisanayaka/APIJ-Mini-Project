@@ -27,6 +27,7 @@ public ChatStart() {
 
     this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     this.setContentPane(chatstart);
+    this.setSize(400, 600);
     this.pack();
 
 

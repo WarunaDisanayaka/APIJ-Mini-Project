@@ -5,6 +5,7 @@ import com.Main.ChatServer.User;
 import entity.GroupsEntity;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Date;
@@ -21,19 +22,14 @@ public class ChatGroup extends JFrame{
 
     public Database db = new Database();
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("ChatGroup");
-        frame.setContentPane(new ChatGroup().grouppanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-    }
+
 
 
 public ChatGroup() {
-    this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    this.setContentPane(grouppanel);
-    this.pack();
+    setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    setContentPane(grouppanel);
+    setSize(400, 600);
+    setVisible(true);
 
     System.out.println(User.getNickname());
     createGroupButton.addActionListener(new ActionListener() {
@@ -70,8 +66,23 @@ public ChatGroup() {
             ChatGroup.super.dispose();
             JFrame frame8 = new ChatStart();
             frame8.setVisible(true);
-            frame8.setSize(400, 500);
+            frame8.setSize(400, 600);
         }
     });
+
+
 }
+    public static void main(String[] args) {
+        ChatGroup chatgroup = new ChatGroup();
+        Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (int) ((dimension.getWidth() - chatgroup.getWidth()) / 2);
+        int y = (int) ((dimension.getHeight() - chatgroup.getHeight()) / 2);
+        chatgroup.setLocation(x, y);
+        //        JFrame frame = new JFrame("ChatGroup");
+//        frame.setSize(400, 600);
+//        frame.setContentPane(new ChatGroup().grouppanel);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.pack();
+//        frame.setVisible(true);
+    }
 }
