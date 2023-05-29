@@ -27,12 +27,14 @@ public class ChatImplementation extends UnicastRemoteObject implements Chat {
 
     @Override
     public void sendMessage(Message msg) throws RemoteException {
-
+            newMessage.add(msg);
+            newmsg=msg;
+        System.out.println(newmsg.getMessage());
     }
 
     @Override
     public Message broadcast() throws RemoteException {
-        return null;
+        return newmsg;
     }
 
     @Override
