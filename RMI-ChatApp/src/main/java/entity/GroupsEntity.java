@@ -130,4 +130,8 @@ public class GroupsEntity {
         result = 31 * result + isDeleted;
         return result;
     }
+
+    public void setCreatedTime(String currentTimeString) {
+        this.createdTime = createdTime;
+    }
 }

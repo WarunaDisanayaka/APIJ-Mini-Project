@@ -155,6 +155,22 @@ public class Database {
     }
 
 
+//    -----------------------------------------------------------------------------------------
+
+    public void insertroom(GroupsEntity groupsEntity){
+        try {
+            et.begin();
+            em.persist(groupsEntity);
+            et.commit();
+        }finally {
+            if (et.isActive()){
+                et.rollback();
+            }
+
+        }
+    }
+
+
     public void close(){
         em.close();
         emf.close();
