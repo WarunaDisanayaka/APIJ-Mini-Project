@@ -22,7 +22,7 @@ public class server {
         try {
             Chat chat = new ChatImplementation();
 
-            int port = 30000+portid;
+            int port = 40000+portid;
 
             LocateRegistry.createRegistry(port);
 
