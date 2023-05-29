@@ -44,7 +44,7 @@ public class Register extends JFrame{
                 userEntity.setIsDeleted(0);
                 userEntity.setRoleId(2);
 
-                File file=new File("/Users/warunapradeep/Documents/APIJ-Mini-Project/RMI-ChatApp/src/main/java/img/login.png");
+                File file=new File("E:\\user.png");
                 byte[] imageData;
 
                 try {
