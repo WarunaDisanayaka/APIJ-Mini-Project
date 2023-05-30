@@ -21,7 +21,7 @@ public class client {
 
         try {
 
-            chatInterface = (Chat) Naming.lookup("rmi://192.168.8.102:"+port+"/"+name);
+            chatInterface = (Chat) Naming.lookup("rmi://192.168.8.101:"+port+"/"+name);
 
         } catch (RemoteException | MalformedURLException | NotBoundException e) {
             throw new RuntimeException(e);
