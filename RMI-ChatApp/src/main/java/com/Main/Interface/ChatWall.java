@@ -38,7 +38,7 @@ public class ChatWall extends JFrame {
         try {
             chatClient = client.chatInterface;
             Message stms = new Message();
-            stms.setMessage("Type your message here");
+            stms.setMessage("chat Starting...");
             chatClient.sendMessage(stms);
 
             list.setModel(model);
