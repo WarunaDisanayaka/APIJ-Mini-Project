@@ -57,7 +57,7 @@ public class Profile extends JFrame{
                 userEntity.setEmail(useremail);
                 userEntity.setIsDeleted(0);
                 userEntity.setRoleId(2);
-                
+
 
 
             }

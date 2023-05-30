@@ -45,6 +45,11 @@ public class Login extends JFrame{
                                 chatGroup.setSize(400,600);
                                 JFrame login = new Login();
                                 login.setVisible(false);
+
+                            JButton button = (JButton) e.getSource();
+                            JFrame welcome = (JFrame) SwingUtilities.getWindowAncestor(button);
+                            welcome.dispose();
+                            
                         }else if(Objects.equals(role,"2")){
                             JFrame userPanel=new UserPanel();
                             userPanel.setVisible(true);
