@@ -24,6 +24,7 @@ public class ChatWall extends JFrame {
 
     JLabel label = new JLabel();
     JPanel panel = new JPanel();
+
     JTextField textField = new JTextField(20);
     JButton button = new JButton("Send");
 
@@ -37,7 +38,7 @@ public class ChatWall extends JFrame {
         try {
             chatClient = client.chatInterface;
             Message stms = new Message();
-            stms.setMessage("Start Chat");
+            stms.setMessage("Type your message here");
             chatClient.sendMessage(stms);
 
             list.setModel(model);
@@ -46,7 +47,11 @@ public class ChatWall extends JFrame {
             panel.setLayout(new BorderLayout());
             panel.add(label, BorderLayout.NORTH);
             panel.add(textField, BorderLayout.CENTER);
+            textField.setBackground(Color.lightGray);
+            label.setForeground(Color.RED);
+            label.setBackground(Color.YELLOW);
             panel.add(button, BorderLayout.EAST);
+            panel.setBackground(Color.YELLOW);
 
             button.addActionListener(new ActionListener() {
                 @Override
@@ -71,6 +76,7 @@ public class ChatWall extends JFrame {
             frame.add(panel, BorderLayout.SOUTH);
             frame.pack();
             frame.setLocationRelativeTo(null);
+            frame.setSize(400,600);
             frame.setVisible(true);
 
             Thread updateMessagesThread = new Thread() {
