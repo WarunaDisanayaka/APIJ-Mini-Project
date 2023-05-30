@@ -44,7 +44,7 @@ public class Register extends JFrame{
                 userEntity.setIsDeleted(0);
                 userEntity.setRoleId(2);
 
-                File file=new File("E:\\user.png");
+                File file=new File("/Users/dhananjaya/Documents/APIJ-Mini-Project/RMI-ChatApp/src/main/resources/Images/WhatsApp Image 2023-05-14 at 12.53.04.jpeg");
                 byte[] imageData;
 
                 try {

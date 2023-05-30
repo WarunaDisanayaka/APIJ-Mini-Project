@@ -67,7 +67,6 @@ public class UserPanel extends JFrame {
                     String selectedName = name.toString();
                     String selectedDescription = description.toString();
 
-                    // Use the variables as needed
                     System.out.println("Selected ID: " + selectedId);
                     System.out.println("Selected Name: " + selectedName);
                     System.out.println("Selected Description: " + selectedDescription);
