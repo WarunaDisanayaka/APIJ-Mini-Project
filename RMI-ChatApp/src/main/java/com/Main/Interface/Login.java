@@ -8,6 +8,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Objects;
 
 public class Login extends JFrame{
@@ -15,6 +17,7 @@ public class Login extends JFrame{
     private JPasswordField pwd;
     private JButton loginButton;
     private JPanel loginPanel;
+    private JLabel register;
 
     public Database database=new Database();
 
@@ -40,6 +43,8 @@ public class Login extends JFrame{
                                 JFrame chatGroup=new ChatGroup();
                                 chatGroup.setVisible(true);
                                 chatGroup.setSize(400,600);
+                                JFrame login = new Login();
+                                login.setVisible(false);
                         }else if(Objects.equals(role,"2")){
                             JFrame userPanel=new UserPanel();
                             userPanel.setVisible(true);
@@ -56,6 +61,13 @@ public class Login extends JFrame{
                     JOptionPane.showMessageDialog(null,"Nor users available!");
                 }
 
+            }
+        });
+        register.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                Register register1=new Register();
+                register1.setVisible(true);
             }
         });
     }

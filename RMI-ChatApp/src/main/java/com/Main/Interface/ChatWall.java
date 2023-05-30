@@ -4,6 +4,7 @@ import com.Main.ChatServer.*;
 import com.Main.ChatServer.server.client;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -29,12 +30,9 @@ public class ChatWall extends JFrame {
     public ChatWall() {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setContentPane(userchatwall);
-//        this.setSize(400,600);
         this.pack();
-        setSize(450,300);
+        setSize(650, 500);
         client.runClient(User.getGroupName(), User.getGroupId());
-
-
 
         try {
             chatClient = client.chatInterface;
@@ -75,16 +73,15 @@ public class ChatWall extends JFrame {
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
 
-
             Thread updateMessagesThread = new Thread() {
                 @Override
                 public void run() {
                     while (true) {
                         try {
                             Message message = chatClient.broadcast();
-                            if (lastms.equals(message.getMessage())){
+                            if (lastms.equals(message.getMessage())) {
                                 continue;
-                            }else {
+                            } else {
                                 lastms = message.getMessage();
                                 SwingUtilities.invokeLater(() -> model.addElement(message));
                             }
@@ -104,17 +101,7 @@ public class ChatWall extends JFrame {
         }
     }
 
-//    public void getMessages(){
-//        try {
-//            Observer remoteUser1 = new RemoteUser("User1");
-//            chatClient.registerObserver(remoteUser1);
-//        } catch (RemoteException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-
     public static void main(String[] args) {
-
         SwingUtilities.invokeLater(ChatWall::new);
     }
 
@@ -125,18 +112,22 @@ public class ChatWall extends JFrame {
 
         public MessageListRenderer() {
             setOpaque(true);
-            setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+            setBorder(new EmptyBorder(5, 5, 5, 5));
             setLayout(new BorderLayout());
 
             avatarLabel = new JLabel();
             nicknameLabel = new JLabel();
             messageLabel = new JLabel();
 
-            add(avatarLabel, BorderLayout.WEST);
             JPanel textPanel = new JPanel(new BorderLayout());
             textPanel.add(nicknameLabel, BorderLayout.NORTH);
             textPanel.add(messageLabel, BorderLayout.CENTER);
-            add(textPanel, BorderLayout.CENTER);
+
+            JPanel leftPanel = new JPanel(new BorderLayout());
+            leftPanel.add(avatarLabel, BorderLayout.WEST);
+            leftPanel.add(textPanel, BorderLayout.CENTER);
+
+            add(leftPanel, BorderLayout.WEST);
         }
 
         public Component getListCellRendererComponent(JList<? extends Message> list, Message message, int index,
@@ -157,15 +148,9 @@ public class ChatWall extends JFrame {
 
             if (message.getUserId() == 10) { // Assuming 10 is the ID of the current user
                 setAlignmentX(RIGHT_ALIGNMENT);
-                avatarLabel.setAlignmentX(RIGHT_ALIGNMENT);
-                nicknameLabel.setAlignmentX(RIGHT_ALIGNMENT);
-                messageLabel.setAlignmentX(RIGHT_ALIGNMENT);
                 setBackground(new Color(200, 220, 255)); // Set background color for sent messages
             } else {
                 setAlignmentX(LEFT_ALIGNMENT);
-                avatarLabel.setAlignmentX(LEFT_ALIGNMENT);
-                nicknameLabel.setAlignmentX(LEFT_ALIGNMENT);
-                messageLabel.setAlignmentX(LEFT_ALIGNMENT);
                 setBackground(list.getBackground());
             }
 

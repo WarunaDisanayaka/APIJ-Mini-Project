@@ -18,11 +18,7 @@ public class ChatGroup extends JFrame{
     private JButton createGroupButton;
     private JButton showAvailableGroupsButton;
     private JPanel grouppanel;
-
-
     public Database db = new Database();
-
-
 
 
 public ChatGroup() {
@@ -30,7 +26,7 @@ public ChatGroup() {
     setContentPane(grouppanel);
     setSize(400, 600);
     setVisible(true);
-
+    
     System.out.println(User.getNickname());
     createGroupButton.addActionListener(new ActionListener() {
         @Override
@@ -52,9 +48,10 @@ public ChatGroup() {
             grope.setCreatedTime(String.valueOf(currentDate));
 
 
-            db.insertroom(grope); // Close the session
+            db.insertroom(grope);
 
-            System.out.println("Room added successfully");
+//            System.out.println("Room added successfully");
+            JOptionPane.showMessageDialog(null,"Group added successfully");
 
             textArea1.setText("");
             textField1.setText("");
@@ -72,17 +69,5 @@ public ChatGroup() {
 
 
 }
-    public static void main(String[] args) {
-        ChatGroup chatgroup = new ChatGroup();
-        Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-        int x = (int) ((dimension.getWidth() - chatgroup.getWidth()) / 2);
-        int y = (int) ((dimension.getHeight() - chatgroup.getHeight()) / 2);
-        chatgroup.setLocation(x, y);
-        //        JFrame frame = new JFrame("ChatGroup");
-//        frame.setSize(400, 600);
-//        frame.setContentPane(new ChatGroup().grouppanel);
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        frame.pack();
-//        frame.setVisible(true);
-    }
+
 }

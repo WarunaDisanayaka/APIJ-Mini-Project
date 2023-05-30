@@ -10,22 +10,22 @@
         <class>entity.RoleEntity</class>
         <class>entity.UserEntity</class>
         <properties>
-            <property name="toplink.jdbc.url" value="jdbc:mysql://sql8.freemysqlhosting.net:3306/sql8622125"/>
+            <property name="toplink.jdbc.url" value="jdbc:mysql://encode99.org.lk:3306/encodeor_chatapp"/>
             <property name="toplink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="toplink.jdbc.user" value="sql8622125"/>
-            <property name="toplink.jdbc.password" value="s3WESjVaFU"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://sql8.freemysqlhosting.net:3306/sql8622125"/>
+            <property name="toplink.jdbc.user" value="encodeor_waruna"/>
+            <property name="toplink.jdbc.password" value="Of4}PYDD)QwV"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://encode99.org.lk:3306/encodeor_chatapp"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="hibernate.connection.username" value="sql8622125"/>
-            <property name="hibernate.connection.password" value="s3WESjVaFU"/>
-            <property name="openjpa.ConnectionURL" value="jdbc:mysql://sql8.freemysqlhosting.net:3306/sql8622125"/>
+            <property name="hibernate.connection.username" value="encodeor_waruna"/>
+            <property name="hibernate.connection.password" value="Of4}PYDD)QwV"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://encode99.org.lk:3306/encodeor_chatapp"/>
             <property name="openjpa.ConnectionDriverName" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="openjpa.ConnectionUserName" value="sql8622125"/>
-            <property name="openjpa.ConnectionPassword" value="s3WESjVaFU"/>
-            <property name="eclipselink.jdbc.url" value="jdbc:mysql://sql8.freemysqlhosting.net:3306/sql8622125"/>
+            <property name="openjpa.ConnectionUserName" value="encodeor_waruna"/>
+            <property name="openjpa.ConnectionPassword" value="Of4}PYDD)QwV"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://encode99.org.lk:3306/encodeor_chatapp"/>
             <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="eclipselink.jdbc.user" value="sql8622125"/>
-            <property name="eclipselink.jdbc.password" value="s3WESjVaFU"/>
+            <property name="eclipselink.jdbc.user" value="encodeor_waruna"/>
+            <property name="eclipselink.jdbc.password" value="Of4}PYDD)QwV"/>
         </properties>
     </persistence-unit>
 </persistence>
