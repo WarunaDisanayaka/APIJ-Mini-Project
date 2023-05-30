@@ -26,7 +26,7 @@ public ChatGroup() {
     setContentPane(grouppanel);
     setSize(400, 600);
     setVisible(true);
-    
+
     System.out.println(User.getNickname());
     createGroupButton.addActionListener(new ActionListener() {
         @Override
