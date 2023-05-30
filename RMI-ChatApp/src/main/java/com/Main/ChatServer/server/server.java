@@ -26,7 +26,7 @@ public class server {
 
             LocateRegistry.createRegistry(port);
 
-            Naming.rebind("rmi://192.168.8.101:" + port + "/" + name, chat);
+            Naming.rebind("rmi://192.168.8.102:" + port + "/" + name, chat);
 
             chatInstances.put(name, chat);
 
@@ -41,7 +41,7 @@ public class server {
         try {
             Chat chat = chatInstances.get(name);
             if (chat != null) {
-                String[] bindings = Naming.list("rmi://192.168.8.101/");
+                String[] bindings = Naming.list("rmi://192.168.8.102/");
                 for (String binding : bindings) {
                     if (binding.contains(name)) {
                         Naming.unbind(binding);
